@@ -10,7 +10,7 @@ int removeDuplicates(int* nums, int numsSize){
 
 	for (j = 1; j< numsSize; j++)
 	{
-		if ((nums[i] != nums[j]) && (i != j)) {
+		if (nums[i] != nums[j] && i != j) {
 			nums[++i] = nums[j];
 		}
 		
