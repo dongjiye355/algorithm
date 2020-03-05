@@ -3,6 +3,11 @@
 int removeDuplicates(int* nums, int numsSize){
 	int i = 0;
 	int j = 0;
+
+	if (numsSize <= 0 || nums == NULL) {
+		return 0;
+	}
+
 	for (j = 1; j< numsSize; j++)
 	{
 		if ((nums[i] != nums[j]) && (i != j)) {
